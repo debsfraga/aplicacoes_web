@@ -23,6 +23,6 @@ public class ImageServiceImpl implements ImageService {
 
     @Override
     public Optional<Image> getById(String id) {
-        return Optional.empty();
+        return repository.findById(id);
     }
 }
