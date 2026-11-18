@@ -7,7 +7,7 @@ export const Template: React.FC<TemplateProps> = (props: TemplateProps) => {
         <>
             <Header/>
                 <div className="container mx-auto mt-8 px-4">
-                     {props.children}
+                    {props.children}
                 </div>
             <Footer/>
         </>
@@ -24,11 +24,11 @@ const Header: React.FC = () =>{
     )
 }
 
-const Footer: React.FC = () => {
+const Footer: React.FC = () =>{
     return(
         <footer className="bg-red-600 text-white py-4 mt-8">
             <div className="container mx-auto text-center">
-                Desenvolvido por Débora Fraga
+                Desenvolvido por Luiz Lozano
             </div>
         </footer>
     )

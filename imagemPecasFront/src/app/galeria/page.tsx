@@ -1,8 +1,8 @@
 'use client'
 
-import {ImageCard, Template} from '@/components'
+import {Template, ImageCard} from '@/components'
 import {Image} from '@/resources/image/image.resource'
-import { useImageService } from '@/resources/image/image.service'
+import {useImageService} from '@/resources/image/image.service'
 import { useState } from 'react';
 
 export default function GaleriaPage(){
@@ -16,18 +16,18 @@ export default function GaleriaPage(){
     }
 
     function renderImageCard(image: Image){
-        return(
-            <ImageCard  key={image.url}
-                        nome={image.name}
-                        src={image.url}
-                        tamanho={image.size}
-                        dataUpload={image.uploadDate}
-                             />
+        return (
+            <ImageCard key={image.url}
+                       nome={image.name}
+                       src={image.url}
+                       tamanho={image.size}
+                       dataUpload={image.uploadDate}
+                       />
         )
     }
 
     function renderImageCards(){
-        // return images.map(image => renderImageCards(image));
+        //return images.map(image => renderImageCard(image));
         return images.map(renderImageCard);
     }
 
@@ -38,7 +38,7 @@ export default function GaleriaPage(){
                 {
                     renderImageCards()
                 }
-            </section>
+            </section> 
         </Template>
     );
 }

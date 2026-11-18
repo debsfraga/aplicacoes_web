@@ -11,13 +11,12 @@ import java.util.List;
 
 @Component
 public class ImageMapper {
-    public Image mapToImage(MultipartFile file, String name, List<String> tags) throws IOException
-    {
+    public Image mapToImage(MultipartFile file, String name, List<String> tags) throws IOException {
         return Image.builder()
                 .name(name)
-                .tags(String.join(",",tags))
+                .tags(String.join(",", tags))
                 .size(file.getSize())
-                .extension(ImageExtension.valueof(MediaType.valueOf(file.getContentType())))
+                .extension(ImageExtension.valueOf(MediaType.valueOf(file.getContentType())))
                 .file(file.getBytes())
                 .build();
     }
@@ -27,7 +26,7 @@ public class ImageMapper {
                 .url(url)
                 .extension(image.getExtension().name())
                 .name(image.getName())
-                //.size(image.getSize())
+                .size(image.getSize())
                 .uploadDate(image.getUploadDate().toLocalDate())
                 .build();
     }
