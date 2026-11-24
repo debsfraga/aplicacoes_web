@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c663dc8c-448f-4972-ab9a-6406ecf91b98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagemPecasBack/src/main/java/com/example/imagemPecas/domain/entity/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/imagemPecasBack/src/main/java/com/example/imagemPecas/domain/entity/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagemPecasBack/src/main/java/com/example/imagemPecas/application/images/ImageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/imagemPecasBack/src/main/java/com/example/imagemPecas/application/images/ImageDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
